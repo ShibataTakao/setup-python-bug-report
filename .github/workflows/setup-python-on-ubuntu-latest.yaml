@@ -1,0 +1,9 @@
+name: Run setup-python on ubuntu-latest
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
